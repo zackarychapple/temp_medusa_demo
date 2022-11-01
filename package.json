@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "cd dsl; yarn build && cd ../home; yarn build && cd ../nav; yarn build && cd ../search; yarn build && cd ../utils; yarn build && yarn serve",
+    "stackblitzStart": "cd dsl; yarn build && cd ../home; yarn build && cd ../nav; yarn build && cd ../search; yarn build && cd ../utils; yarn build && yarn serve",
     "build": "concurrently \"cd dsl; yarn build\" \"cd home; yarn build\" \"cd nav; yarn build\" \"cd search; yarn build\" \"cd utils; yarn build\"",
     "serve": "concurrently \"yarn serve:dsl\" \"yarn serve:home\" \"yarn serve:nav\" \"yarn serve:search\" \"yarn serve:utils\"",
     "serve:dsl": "cd dsl; yarn serve",
